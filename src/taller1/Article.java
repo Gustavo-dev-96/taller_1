@@ -6,7 +6,9 @@ public class Article {
     private String nameArticle;
     private int priceArticle;
 
-    
+    public Article() {
+    }
+
     public Article(String value1, String value2, int value3) {
         this.codeArticle = value1;
         this.nameArticle = value2;
@@ -41,10 +43,9 @@ public class Article {
         this.priceArticle = priceArticle;
     }
 
-
     @Override
     public String toString() {
-        return "article [codeArticle=" + codeArticle + ", nameArticle=" + nameArticle + ", priceArticle=" + priceArticle
+        return " [codeArticle=" + codeArticle + ", nameArticle=" + nameArticle + ", priceArticle=" + priceArticle
                 + "]";
     }
 

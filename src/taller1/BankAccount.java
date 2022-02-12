@@ -33,7 +33,7 @@ public class BankAccount {
         this.activated = activated;
     }
     
-    public void action(){
+    private void action(){
         int select = 0;
         int value;
         do {
@@ -55,7 +55,7 @@ public class BankAccount {
         } while (select <= 2);
     }
     
-    public void withdraw(int value){
+    private void withdraw(int value){
         int account = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter account number"));
         if (account == this.accountNumber) {
             if (value < this.saldo) {

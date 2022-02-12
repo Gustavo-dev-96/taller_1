@@ -9,7 +9,8 @@ import javax.swing.JOptionPane;
 
 public class Inventory{
 
-    ArrayList<Article> inventory;
+    public ArrayList<Article> inventory;
+    public String typeArticle = "Product"; 
     
 
     public Inventory() {
@@ -22,14 +23,18 @@ public class Inventory{
 
     public void insert(Article article){
         inventory.add(article);
-        System.out.println("vamos bien");
     }
 
 
-    public String print(){
+    public String print(int a){
+        
+        if (a == 1) {
+            typeArticle = "Car";
+        }
+
         String report = "";
         for (int i = 0; i < inventory.size(); i++) {
-            report += (i+1) + " " + inventory.get(i).toString()+"\n";
+            report += (i+1) + " " + typeArticle + " " + inventory.get(i).toString()+"\n";
         }
 
         return report;

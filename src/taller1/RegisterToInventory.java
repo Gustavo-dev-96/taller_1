@@ -11,14 +11,16 @@ public class RegisterToInventory {
 
         inventory = new Inventory();
         inventory.createList();
-
-        int amount = Integer.parseInt(JOptionPane.showInputDialog(null,"How Many Products Will You Register"));
-        recordData(amount);
-        printRegister();
-
+        amountToRegister();
     }
 
-    public void recordData(int amount){
+    public void amountToRegister(){
+        int amount = Integer.parseInt(JOptionPane.showInputDialog(null,"How Many Products Will You Register ?"));
+        recordData(amount);
+        printRegister(0);
+    }
+
+    protected void recordData(int amount){
         for (int i = 0; i <amount;i++)
         {
             int item = i + 1;
@@ -31,8 +33,8 @@ public class RegisterToInventory {
     }
 
 
-    public void printRegister(){
-        String result = inventory.print();
+    public void printRegister(int a){
+        String result = inventory.print(a);
         JOptionPane.showMessageDialog(null, result);
     }
 

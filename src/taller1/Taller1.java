@@ -26,7 +26,8 @@ public class Taller1 {
                 + "2. Fruit inventory \n"
                 + "3. Bank account \n"
                 + "4. Register products \n"
-                + "5. Exit"));
+                + "5. Register cars \n"
+                + "6. Exit"));
             
             
             switch(option){
@@ -53,6 +54,10 @@ public class Taller1 {
                         RegisterToInventory newInventory = new RegisterToInventory();
                     break;
                 case 5:
+                        RegisterToInventoryCars cars = new RegisterToInventoryCars();
+               
+                    break;
+                case 6:
                     System.exit(0);
                     break;
                 default:
@@ -60,7 +65,7 @@ public class Taller1 {
                     
             }
                     
-        } while (option <= 5);
+        } while (option <= 6);
     }
     
 }
