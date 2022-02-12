@@ -25,7 +25,7 @@ public class Taller1 {
                 + "1. Person registration \n"
                 + "2. Fruit inventory \n"
                 + "3. Bank account \n"
-                + "4. Film registration \n"
+                + "4. Register products \n"
                 + "5. Exit"));
             
             
@@ -50,8 +50,7 @@ public class Taller1 {
                     account.balance();
                     break;
                 case 4:
-                    Movies movie = new Movies();
-                    movie.print();
+                        RegisterToInventory newInventory = new RegisterToInventory();
                     break;
                 case 5:
                     System.exit(0);
