@@ -15,11 +15,17 @@ public class Taller1 {
     /**
      * @param args the command line arguments
      */
+
+     
     public static void main(String[] args) {
         
         int option;
         
         do {
+
+            /**
+             * value of the option attribute to be sent to the switch
+             */
             
             option = Integer.parseInt(JOptionPane.showInputDialog(null,"select an option \n\n"
                 + "1. Person registration \n"
@@ -28,7 +34,13 @@ public class Taller1 {
                 + "4. Register products \n"
                 + "5. Register cars \n"
                 + "6. Exit"));
-            
+
+
+            /**
+             * through the selected option in the switch the class can be instantiated
+             * @param option has the value which will be selected in switch
+             * 
+             */
             
             switch(option){
                 case 1:
@@ -55,7 +67,6 @@ public class Taller1 {
                     break;
                 case 5:
                         RegisterToInventoryCars cars = new RegisterToInventoryCars();
-               
                     break;
                 case 6:
                     System.exit(0);

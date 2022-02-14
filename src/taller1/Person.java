@@ -13,12 +13,21 @@ import javax.swing.JOptionPane;
  * @author Gusta
  */
 public class Person {
+
+    /**
+     * class attributes
+     */
     private String name;
     private String lastname1;
     private String lastname2;
     private Date dateBirth;
     private float height;
     private int age;
+
+    /**
+     * Getter and Setter of the class
+     * @return
+     */
 
     public String getName() {
         return name;
@@ -36,7 +45,10 @@ public class Person {
         this.age = age;
     }
     
-
+    /**
+     * enter and validate the age attribute to register
+     * @return result will decide if the user can register
+     */
     public boolean validate() {
         int ageUser = Integer.parseInt(JOptionPane.showInputDialog(null,"Ingrese su edad, debe de ser mayor de edad para registrarse"));
         boolean result = false;
@@ -52,6 +64,9 @@ public class Person {
         return result;
     }
     
+    /**
+     * print the attributes
+     */
     public void print(){
         JOptionPane.showMessageDialog(null,"registered data \n\n"
             + "Name: " + this.name +"\n" 

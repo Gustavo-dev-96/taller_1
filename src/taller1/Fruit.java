@@ -12,9 +12,17 @@ import javax.swing.JOptionPane;
  * @author Gusta
  */
 public class Fruit {
+
+    /**
+     * class attributes
+     */
     private String name;
     private float averageWeight;
     ArrayList colors = new ArrayList();
+
+    /**
+     * constructor method
+     */
 
     public Fruit() {
         
@@ -30,6 +38,11 @@ public class Fruit {
         
     } 
     
+
+    /**
+     * ArrayList getter and setter
+     * @return colors arraylist content
+     */
     public ArrayList getColors() {
         return colors;
     }
@@ -37,6 +50,11 @@ public class Fruit {
     public void setColors(String color) {
         this.colors.add(color);
     }
+
+
+    /**
+     * print the attributes
+     */
     
     public void printFruit(){
         JOptionPane.showMessageDialog(null, "registered fruit \n\n"
