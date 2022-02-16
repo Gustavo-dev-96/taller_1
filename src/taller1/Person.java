@@ -50,7 +50,7 @@ public class Person {
      * @return result will decide if the user can register
      */
     public boolean validate() {
-        int ageUser = Integer.parseInt(JOptionPane.showInputDialog(null,"Ingrese su edad, debe de ser mayor de edad para registrarse"));
+        int ageUser = Integer.parseInt(JOptionPane.showInputDialog(null,"Enter your age, you must be of legal age to register"));
         boolean result = false;
         
         if (ageUser >= 18) {
